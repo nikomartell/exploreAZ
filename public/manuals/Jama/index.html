@@ -1,0 +1,475 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Jama_Manual</title>
+    <meta name="author" content="Reda, CJ - (cjreda)" />
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            text-indent: 0;
+        }
+
+        .s1 {
+            color: #0C224A;
+            font-family: "Times New Roman", serif;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: none;
+            font-size: 16pt;
+        }
+
+        h2 {
+            color: black;
+            font-family: "Times New Roman", serif;
+            font-style: normal;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 11pt;
+        }
+
+        .p,
+        p {
+            color: black;
+            font-family: "Times New Roman", serif;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: none;
+            font-size: 11pt;
+            margin: 0pt;
+        }
+
+        .s2 {
+            color: #1154CC;
+            font-family: "Times New Roman", serif;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: underline;
+            font-size: 11pt;
+        }
+
+        h1 {
+            color: black;
+            font-family: "Times New Roman", serif;
+            font-style: normal;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 14pt;
+        }
+
+        .s3 {
+            color: #0462C1;
+            font-family: "Times New Roman", serif;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: underline;
+            font-size: 11pt;
+        }
+
+        a {
+            color: #0462C1;
+            font-family: "Times New Roman", serif;
+            font-style: normal;
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 11pt;
+        }
+
+        li {
+            display: block;
+        }
+
+        #l1 {
+            padding-left: 0pt;
+            counter-reset: c1 1;
+        }
+
+        #l1>li>*:first-child:before {
+            counter-increment: c1;
+            content: counter(c1, decimal)". ";
+            color: black;
+            font-family: "Times New Roman", serif;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: none;
+            font-size: 11pt;
+        }
+
+        #l1>li:first-child>*:first-child:before {
+            counter-increment: c1 0;
+        }
+
+        #l2 {
+            padding-left: 0pt;
+            counter-reset: c2 1;
+        }
+
+        #l2>li>*:first-child:before {
+            counter-increment: c2;
+            content: counter(c2, lower-latin)". ";
+            color: black;
+            font-family: "Times New Roman", serif;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: none;
+            font-size: 11pt;
+        }
+
+        #l2>li:first-child>*:first-child:before {
+            counter-increment: c2 0;
+        }
+
+        #l3 {
+            padding-left: 0pt;
+            counter-reset: d1 1;
+        }
+
+        #l3>li>*:first-child:before {
+            counter-increment: d1;
+            content: counter(d1, decimal)". ";
+            color: black;
+            font-family: "Times New Roman", serif;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: none;
+            font-size: 11pt;
+        }
+
+        #l3>li:first-child>*:first-child:before {
+            counter-increment: d1 0;
+        }
+
+        #l4 {
+            padding-left: 0pt;
+            counter-reset: e1 1;
+        }
+
+        #l4>li>*:first-child:before {
+            counter-increment: e1;
+            content: counter(e1, decimal)". ";
+            color: black;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: none;
+        }
+
+        #l4>li:first-child>*:first-child:before {
+            counter-increment: e1 0;
+        }
+
+        #l5 {
+            padding-left: 0pt;
+        }
+
+        #l5>li>*:first-child:before {
+            content: " ";
+            color: black;
+            font-family: Symbol, serif;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: none;
+            font-size: 11pt;
+        }
+
+        #l6 {
+            padding-left: 0pt;
+        }
+
+        #l6>li>*:first-child:before {
+            content: "- ";
+            color: black;
+            font-family: Calibri, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: none;
+        }
+
+        #l7 {
+            padding-left: 0pt;
+            counter-reset: c2 1;
+        }
+
+        #l7>li>*:first-child:before {
+            counter-increment: c2;
+            content: counter(c2, lower-latin)". ";
+            color: black;
+            font-family: "Times New Roman", serif;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: none;
+            font-size: 11pt;
+        }
+
+        #l7>li:first-child>*:first-child:before {
+            counter-increment: c2 0;
+        }
+
+        li {
+            display: block;
+        }
+
+        #l8 {
+            padding-left: 0pt;
+            counter-reset: d1 3;
+        }
+
+        #l8>li>*:first-child:before {
+            counter-increment: d1;
+            content: counter(d1, decimal)". ";
+            color: black;
+            font-family: "Times New Roman", serif;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: none;
+            font-size: 11pt;
+        }
+
+        #l8>li:first-child>*:first-child:before {
+            counter-increment: d1 0;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="s1" style="padding-top: 3pt;padding-left: 23pt;text-indent: 0pt;text-align: left;">Jama</p>
+    <h2 style="padding-top: 3pt;padding-left: 6pt;text-indent: 0pt;text-align: left;">LOGIN</h2>
+    <ol id="l1">
+        <li data-list-text="1.">
+            <p style="padding-top: 11pt;padding-left: 41pt;text-indent: -17pt;text-align: left;">Navigate to the Jama
+                login page by clicking on the Jama logo on the DEF Homepage</p>
+            <ol id="l2">
+                <li data-list-text="a.">
+                    <p style="padding-top: 1pt;padding-left: 77pt;text-indent: -17pt;text-align: left;">Alternatively
+                        use the following link:</p>
+                    <p style="padding-left: 78pt;text-indent: 0pt;text-align: left;"><a
+                            href="https://uofaengineering.jamacloud.com/login.req%23/home"
+                            class="s2">https://uofaengineering.jamacloud.com/login.req#/home</a></p>
+                </li>
+            </ol>
+        </li>
+        <li data-list-text="2.">
+            <p style="padding-top: 1pt;padding-left: 41pt;text-indent: -17pt;text-align: left;">Click on the “Log in
+                with SSO” button</p>
+        </li>
+        <li data-list-text="3.">
+            <p style="padding-top: 1pt;padding-left: 41pt;text-indent: -17pt;text-align: left;">Enter NetID information
+            </p>
+        </li>
+        <li data-list-text="4.">
+            <p style="padding-top: 1pt;padding-left: 41pt;text-indent: -17pt;text-align: left;">Upon proper
+                verification, you will gain access to the Jama homepage</p>
+            <h2 style="padding-top: 8pt;padding-left: 6pt;text-indent: 0pt;text-align: left;">LOGOUT</h2>
+            <ol id="l3">
+                <li data-list-text="1.">
+                    <p style="padding-top: 11pt;padding-left: 41pt;text-indent: -17pt;text-align: left;">Select the “Log
+                        Out” button in the top right of the window</p>
+                </li>
+                <li data-list-text="2.">
+                    <p style="padding-top: 1pt;padding-left: 41pt;text-indent: -17pt;text-align: left;">You will be
+                        returned to the login page</p>
+                    <h2 style="padding-top: 9pt;padding-left: 6pt;text-indent: 0pt;text-align: left;">EXPLORING THE JAMA
+                        WORKSPACE</h2>
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                    <p style="padding-left: 6pt;text-indent: 0pt;text-align: left;"><span /></p>
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                    <ol id="l4">
+                        <li data-list-text="1.">
+                            <p style="padding-left: 42pt;text-indent: -18pt;line-height: 108%;text-align: left;">Explore
+                                and Manage Projects – Select the tabs at the top of the left panel to expand these
+                                views: Explorer, Filters, Releases, Baselines, and Test Plans.</p>
+                        </li>
+                        <li data-list-text="2.">
+                            <p style="padding-left: 42pt;text-indent: -18pt;line-height: 107%;text-align: left;">View
+                                item details – View the details for specific items. Content from Components, Sets,
+                                Folders, Filters, and individual items are displayed in this pane.</p>
+                        </li>
+                        <li data-list-text="3.">
+                            <p style="padding-left: 42pt;text-indent: -18pt;line-height: 108%;text-align: left;">Create
+                                trace relationships – Add relationships between items for traceability or add items to a
+                                change request. Open this section from the Relationships tab and close it when it’s not
+                                needed.</p>
+                        </li>
+                        <li data-list-text="4.">
+                            <p
+                                style="padding-top: 3pt;padding-left: 42pt;text-indent: -18pt;line-height: 108%;text-align: left;">
+                                Mange item information – Manage information associated with comments, relationships,
+                                attachments, versions, and activities.</p>
+                        </li>
+                        <li data-list-text="5.">
+                            <p style="padding-left: 41pt;text-indent: -17pt;text-align: left;">Use keywords to navigate
+                                the workspace- Navigate to items grouped by keywords.</p>
+                            <h2 style="padding-top: 8pt;padding-left: 6pt;text-indent: 0pt;text-align: left;">Exporting
+                                Documents from Jama</h2>
+                        </li>
+                        <li data-list-text="6.">
+                            <h2 style="padding-top: 11pt;padding-left: 77pt;text-indent: -53pt;text-align: left;"> <span
+                                    class="p">To export specific items within a Jama project, first use the following
+                                    menu to select the appropriate format:</span></h2>
+                            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                            <p style="padding-left: 178pt;text-indent: 0pt;text-align: left;"><span /></p>
+                            <p style="padding-top: 11pt;text-indent: 0pt;text-align: left;"><br /></p>
+                        </li>
+                        <li data-list-text="7.">
+                            <p style="padding-left: 41pt;text-indent: -17pt;text-align: left;">Once a report is
+                                downloaded, click the “here” button on the banner to download it to your device.</p>
+                            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                            <p style="padding-left: 78pt;text-indent: 0pt;text-align: left;"><span /></p>
+                            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                            <h2 style="padding-left: 6pt;text-indent: 0pt;text-align: left;">Establishing a Relationship
+                            </h2>
+                            <ul id="l5">
+                                <li data-list-text="">
+                                    <p
+                                        style="padding-top: 11pt;padding-left: 41pt;text-indent: -17pt;text-align: left;">
+                                        Navigate to a single item in your project (requirement, test case, etc.)</p>
+                                </li>
+                                <li data-list-text="">
+                                    <p style="padding-top: 1pt;padding-left: 41pt;text-indent: -17pt;text-align: left;">
+                                        Click the “Relate to Existing” button in the top right corner of the main panel
+                                    </p>
+                                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                                    <p style="padding-left: 51pt;text-indent: 0pt;text-align: left;"><span /></p>
+                                </li>
+                                <li data-list-text="">
+                                    <p
+                                        style="padding-left: 42pt;text-indent: -18pt;line-height: 108%;text-align: left;">
+                                        Double click the item that you would like to trace your item back to by locating
+                                        and double clicking it on the right panel that appears</p>
+                                </li>
+                                <li data-list-text="">
+                                    <p
+                                        style="padding-left: 41pt;text-indent: -17pt;line-height: 13pt;text-align: left;">
+                                        Select the appropriate relationship (downstream/upstream)</p>
+                                </li>
+                                <li data-list-text="">
+                                    <p style="padding-left: 41pt;text-indent: -17pt;text-align: left;">Click the “Create
+                                        Relationship” button</p>
+                                </li>
+                                <li data-list-text="">
+                                    <p style="padding-left: 41pt;text-indent: -17pt;text-align: left;">The two items are
+                                        now linked with a relationship</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                    <h2 style="padding-left: 6pt;text-indent: 0pt;text-align: left;">ADMIN: Adding a User Group</h2>
+                    <ul id="l6">
+                        <li data-list-text="-">
+                            <p style="padding-top: 11pt;padding-left: 41pt;text-indent: -17pt;text-align: left;">Select
+                                Admin &gt; Organization &gt; User groups, and then select the “Add group” button</p>
+                            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                            <p style="padding-left: 30pt;text-indent: 0pt;text-align: left;"><span /></p>
+                            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                        </li>
+                        <li data-list-text="-">
+                            <p style="padding-left: 41pt;text-indent: -17pt;text-align: left;">In the window that opens,
+                                enter the name of the group and provide a brief description</p>
+                            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                            <p style="padding-left: 119pt;text-indent: 0pt;text-align: left;"><span /></p>
+                            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                        </li>
+                        <li data-list-text="-">
+                            <p style="padding-left: 41pt;text-indent: -17pt;text-align: left;">Select members for the
+                                group via the column in the bottom left of the panel</p>
+                        </li>
+                        <li data-list-text="-">
+                            <p style="padding-top: 2pt;padding-left: 41pt;text-indent: -17pt;text-align: left;">Selected
+                                users will appear on the right</p>
+                        </li>
+                        <li data-list-text="-">
+                            <p style="padding-left: 41pt;text-indent: -17pt;text-align: left;">Click “save” to create
+                                the group</p>
+                        </li>
+                    </ul>
+                    <h1 style="padding-top: 8pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">LOGIN</h1>
+                </li>
+            </ol>
+        </li>
+        <li data-list-text="5.">
+            <p style="padding-top: 12pt;padding-left: 41pt;text-indent: -17pt;text-align: left;">Navigate to the Jama
+                login page by clicking on the Jama logo on the DEF Homepage</p>
+            <ol id="l7">
+                <li data-list-text="a.">
+                    <p style="padding-left: 77pt;text-indent: -17pt;text-align: left;">Alternatively use the following
+                        link:</p>
+                    <p style="padding-top: 1pt;padding-left: 78pt;text-indent: 0pt;text-align: left;"><a
+                            href="https://uofaengineering.jamacloud.com/login.req%23/home"
+                            class="s3">https://uofaengineering.jamacloud.com/login.req#/home</a></p>
+                </li>
+            </ol>
+        </li>
+        <li data-list-text="6.">
+            <p style="padding-top: 1pt;padding-left: 41pt;text-indent: -17pt;text-align: left;">Click on the “Log in
+                with SSO” button</p>
+        </li>
+        <li data-list-text="7.">
+            <p style="padding-top: 1pt;padding-left: 41pt;text-indent: -17pt;text-align: left;">Enter NetID information
+            </p>
+        </li>
+        <li data-list-text="8.">
+            <p style="padding-left: 41pt;text-indent: -17pt;text-align: left;">Upon proper verification, you will gain
+                access to the Jama homepage</p>
+        </li>
+    </ol>
+    <h1 style="padding-top: 9pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">LOGOUT</h1>
+    <ol id="l8">
+        <li data-list-text="3.">
+            <p style="padding-top: 12pt;padding-left: 41pt;text-indent: -17pt;text-align: left;">Select the “Log Out”
+                button in the top right of the window</p>
+        </li>
+        <li data-list-text="4.">
+            <p style="padding-top: 1pt;padding-left: 41pt;text-indent: -17pt;text-align: left;">You will be returned to
+                the login page</p>
+        </li>
+    </ol>
+    <h1 style="padding-top: 8pt;text-indent: 0pt;text-align: center;">EXPLORING THE JAMA WORKSPACE</h1>
+    <p style="padding-top: 12pt;padding-left: 6pt;text-indent: 0pt;text-align: left;"><a
+            href="https://help.jamasoftware.com/ah/en/get-started/exploring-the-jama-connect-workspace.html">https://help.jamasoftware.com/ah/en/get-started/exploring-the-jama-connect-workspace.html</a>
+    </p>
+    <h1 style="padding-top: 11pt;text-indent: 0pt;text-align: center;">Exporting Documents from Jama</h1>
+    <p style="padding-top: 12pt;padding-left: 1pt;text-indent: 0pt;text-align: center;"><a
+            href="https://help.jamasoftware.com/ah/en/get-started/exporting-documents-from-jama-connect.html"
+            class="s3">https://help.jamasoftware.com/ah/en/get-started/exporting-documents-from-jama-connect.html</a>
+    </p>
+    <h1 style="padding-top: 11pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Requirement Traceability</h1>
+    <p style="padding-top: 12pt;padding-left: 1pt;text-indent: 0pt;text-align: center;"><a
+            href="https://help.jamasoftware.com/ah/en/get-started/traceability-from-requirements-to-test.html">https://help.jamasoftware.com/ah/en/get-started/traceability-from-requirements-to-test.html</a>
+    </p>
+    <h1 style="padding-top: 11pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">ADMIN: Adding a User</h1>
+    <p style="padding-top: 12pt;padding-left: 11pt;text-indent: 0pt;line-height: 111%;text-align: center;"><span
+            style=" color: #0462C1; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: bold; text-decoration: underline; font-size: 11pt;">https://help.jamasoftware.com/ah/en/administration/organization-administrator/managing-users-</span><a
+            href="https://help.jamasoftware.com/ah/en/administration/organization-administrator/managing-users-and-groups/add-a-user.html"
+            style=" color: #0462C1; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 11pt;"
+            target="_blank"> </a><a
+            href="https://help.jamasoftware.com/ah/en/administration/organization-administrator/managing-users-and-groups/add-a-user.html"
+            target="_blank">and-groups/add-a-user.html</a></p>
+    <h1 style="padding-top: 10pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">ADMIN: Adding a User Group</h1>
+    <p style="padding-top: 12pt;padding-left: 11pt;text-indent: 0pt;line-height: 110%;text-align: center;"><span
+            style=" color: #0462C1; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: bold; text-decoration: underline; font-size: 11pt;">https://help.jamasoftware.com/ah/en/administration/organization-administrator/managing-users-</span><a
+            href="https://help.jamasoftware.com/ah/en/administration/organization-administrator/managing-users-and-groups/user-groups/add-a-user-group.html"
+            style=" color: #0462C1; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 11pt;"
+            target="_blank"> </a><a
+            href="https://help.jamasoftware.com/ah/en/administration/organization-administrator/managing-users-and-groups/user-groups/add-a-user-group.html"
+            target="_blank">and-groups/user-groups/add-a-user-group.html</a></p>
+    <h1 style="padding-top: 10pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">ADMIN: Granting Permissions
+    </h1>
+    <p style="padding-top: 12pt;padding-left: 18pt;text-indent: 0pt;line-height: 110%;text-align: center;"><span
+            style=" color: #0462C1; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 11pt;">https://help.jamasoftware.com/ah/en/administration/organization-administrator/managing-users-and-</span><a
+            href="https://help.jamasoftware.com/ah/en/administration/organization-administrator/managing-users-and-groups/grant-permissions.html"
+            style=" color: #0462C1; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt;"
+            target="_blank"> </a><a
+            href="https://help.jamasoftware.com/ah/en/administration/organization-administrator/managing-users-and-groups/grant-permissions.html"
+            class="s3" target="_blank">groups/grant-permissions.html</a></p>
+    <h1 style="padding-top: 10pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">ADMIN: Edit Project Details
+    </h1>
+    <p style="padding-top: 12pt;padding-left: 1pt;text-indent: 0pt;text-align: center;"><a
+            href="https://help.jamasoftware.com/ah/en/get-started/traceability-from-requirements-to-test.html">https://help.jamasoftware.com/ah/en/get-started/traceability-from-requirements-to-test.html</a>
+    </p>
+    <p style="padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">…</p>
+</body>
+
+</html>

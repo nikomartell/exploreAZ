@@ -1,0 +1,418 @@
+@charset "utf-8";
+/* CSS Document  for the College of Engineering IT support
+
+  CSS Vars  
+  to access the value later use var( --<varname> )
+*/
+
+
+
+:root{
+  --UAblue: #001c48;
+  --UAlightBlue: #2435cc;
+  --UAred: #ab0520;
+  --OffWhite: #f1f1f1;
+  --DarkGrey: #c1c1c1;
+  --SupportMenuWidth: 150px;
+}
+
+h1{
+  text-align: center;
+}
+
+
+html {
+	margin: 0;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+/*  min-width: 100vw; */
+}
+.engrIT-header-support {
+  background: var(--UAblue);
+  height: 60px;
+}
+#region-header-engr {
+  height: 60px;
+  display: flex;
+  color: var(--UAblue);
+}
+#region-header-engr img{
+  width: auto;
+  height: 60px;
+  display: block;
+  margin-left: 8%;
+  margin-right: auto;
+  display: flex;
+}
+#support-menu-button {
+  background-color: var( --UAblue );
+  border: none;
+  color: white;
+  padding: 1px 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#support-menu {
+  display: block;
+  width: 100%;
+  background: var(--UAblue);
+}
+#support-menu ul {
+  list-style-type: none;
+  position: relative;
+}
+
+a.support-menu-a {
+  color: white;
+}
+#support-menu-button {
+  margin-right: 0;
+  right: 100%;
+}
+
+.maincontent {
+  margin-bottom: auto;
+}
+
+/* 
+  Footer content
+*/
+
+#footer-site{
+  background:#e6e3d9;
+  margin-top:2.5rem;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+.defhead{
+  display: block;
+}
+
+.footer-container{
+  margin-bottom: 0px;
+  margin-left: 5px;
+  bottom: 0;
+}
+
+#footer-site #footer-logo-img{
+  height:auto;
+  margin:0 auto 1rem;
+  max-width:360px;
+  width:80%;
+}
+#footer-site ul{
+  display:inline-block;
+  margin:0;
+  padding:1rem 0 0;
+}
+#footer-site ul>li{
+  border-right:1px solid #b6bec1;
+  display:inline-block;
+  list-style:none;
+/*  padding:0 .75rem; */
+}
+#footer-site ul>li.last{
+  border-right:0;
+}
+#footer-site a{
+  color:#333;
+  text-decoration:underline;
+}
+#footer-site #footer-copyright{
+  float:left;width:100%;
+}
+
+.tab {
+  margin-left: 40px;
+}       
+
+.short_tab {
+  margin: auto;
+  justify-content: center;
+  vertical-align: center;
+  flex-direction: wrap;
+  display: flex;
+}
+
+.long_tab {
+  margin-left: 60px;
+}
+
+
+/* box outline for where icons are to be placed into*/
+.box_model {
+  max-width:100%;
+  height: auto;
+  border: 50px #c1c1c1;
+  padding: 50px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 18px;
+  text-align: center;
+} 
+
+.caption {
+  max-width:100%;
+  height: auto;
+  margin: 20px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+} 
+
+/*
+  tab styling
+*/
+.tabnames {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+/* Style the buttons that are used to open the tab content */
+.tabnames button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.5s;
+}
+
+/* Change background color of buttons on hover */
+.tabnames button:hover {
+  background-color: #c5bdbd;
+}
+
+/* Create an active/current tablink class */
+.tabnames button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.no-bullets {
+  list-style-type: none;
+}
+
+.item{
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  width: 25rem;
+  height: 14rem;
+  margin: 4rem;
+  border: 5px solid var(--UAblue);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.logo{
+  justify-content: center;
+  display: inline-block;
+  position: relative;
+}
+
+.item p{
+  position: relative;
+  background-color: var(--DarkGrey);
+  color: black;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+  border-radius: 20px;
+  border: 5px solid var(--UAblue);
+  font-size: 12px;
+  padding: 8px 15px;
+  width: 25rem;
+  margin-top: 3rem;
+  z-index: 1;
+}
+
+.item:hover{
+  cursor: pointer;
+}
+
+.item:hover p{
+  visibility: visible;
+  opacity: 1;
+}
+
+.logo img{
+  height: 5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.logo img:hover{
+  background: var(--DarkGrey);
+}
+
+.item:hover{
+  background: var(--DarkGrey);
+}
+
+/*Niko Notes: 
+  add logo hover effect for button indication. do the same for info button.
+  update links for tools installed on def
+  fix logo padding/border issue 
+  Standardize logo button sizes through image sizes or css */
+
+.deflogo{
+  max-height: 10rem;
+  max-width: 100%;
+}
+
+.arizona-logo{
+  float: left;
+  background-size: cover;
+  background-position: center center;
+}
+
+.it-logo{
+  float: right;
+  background-size: cover;
+  background-position: center center;
+  width: 270px;
+  height: 20px;
+}
+
+.def-header{
+  background-color: #ab0520;
+}
+
+.caption{
+  display: block;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.hide{
+  display: none;
+}
+
+.sendDesc:hover + .hide{
+  display: block;
+  color: black
+}
+
+.leftTab{
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+.leftTab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.leftTab button:hover{
+  color: #b6bec1;
+}
+
+.leftTab button.active{
+  background-color: var(--DarkGrey);
+}
+
+ /* Popup container */
+ .popup {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 80px;
+  font-size: 12px;
+  background: var(--DarkGrey);
+  border-radius: 20px;
+  margin: auto;
+  padding: 4px;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 40rem;
+  background-color: var(--OffWhite);
+  opacity: 90%;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: -125%;
+  left: 50%;
+  margin-left: -100px;
+  max-width: 200%;
+  border: 5px solid var(--DarkGrey);
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--OffWhite) transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 0.7s;
+  animation: fadeIn 0.7s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: .90;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:.90 ;}
+} 

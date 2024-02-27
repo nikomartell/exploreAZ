@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<!--[if lte IE 9]><html lang="en" dir="ltr" class="lte-ie9 external-links ua-brand-icons sticky-footer"><![endif]-->
+<!--[if (gt IE 9)|(gt IEMobile 7)]><!-->
+<html lang="en" dir="ltr" class="external-links ua-brand-icons sticky-footer">
+<!--<![endif]-->
+<html lang="en" class="external-links ua-brand-icons sticky-footer">
+
+</html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DEF</title>
+    <link rel="icon" type="image/x-icon" href="images/DEF-Logos/favicon.ico">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.uadigital.arizona.edu/lib/ua-bootstrap/v1.0.0-beta.17/ua-bootstrap.min.js"></script>
+    <!-- bootrap 3 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--  engr scripts -->
+    <script src="scripts/toggles.js"></script>
+    <script>
+        $(function () {
+            var includes = $('[data-include]');
+            jQuery.each(includes, function () {
+                var file = $(this).data('include') + '.html';
+                $(this).load(file);
+            });
+        });
+    </script>
+
+    <!-- Latest icon font stylesheet -->
+    <link rel="stylesheet" href="https://cdn.uadigital.arizona.edu/lib/ua-brand-icons/latest/ua-brand-icons.css">
+    <!-- Compiled and minified UA Bootstrap CSS, icon font not included -->
+    <link rel="stylesheet"
+        href="https://cdn.uadigital.arizona.edu/lib/ua-bootstrap/v1.0.0-beta.17/ua-bootstrap.min.css">
+    <!-- EngrIT CSS for Admin Request app -->
+    <link href="css/engrStyle.css" rel="stylesheet">
+    <!-- pretty tables -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif">
+    <style>
+    body {
+      font-family: "Bree Serif", sans-serif;
+    }
+    </style>
+
+</head>
+<body>
+<!-- header -->
+<div data-include="includes/header"></div>
+<!-- open the Setup tab by default -->
+<script>
+    document.getElementById("Setup").click();
+</script>
+<!-- Start o content -->
+<div class="maincontent">
+    <!--<div data-include="intro"></div> -->
+    <!-- Tab links -->
+    <div class="tabnames">
+        <!-- CHANGE ME only the text before the </button> tag -->
+        <button class="tablinks active" onclick="openTab(event, 'Welcome')">Home</button>
+        <button class="tablinks" onclick="openTab(event, 'Resources')">Resources</button>
+        <button class="tablinks" onclick="openTab(event, 'Tool List')">Tools</button>
+        <!-- <button class="tablinks" onclick="openTab(event, 'Setup')">Setup</button>
+         <button class="tablinks" onclick="openTab(event, 'Editing')">Editing</button> -->
+    </div>
+
+    <!-- Tab content -->
+    <div id="Resources" class="tabcontent">
+        <div data-include="tabs/resources"></div>
+    </div> <!-- setup content -->
+
+    <div id="Tool List" class="tabcontent">
+        <div data-include="tabs/toolList"></div>
+    </div> <!-- setup content -->
+
+    <div id="Welcome" class="tabcontent" style="display: block;">
+        <div data-include="tabs/welcome"></div>
+    </div>
+
+</div> <!-- maincontent -->
+<!-- footer -->
+<div data-include="includes/footer"></div>
+<p>
+
+</p>
+
+</body>
+
+</html>
