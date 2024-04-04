@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>DEF</title>
+    <title>Explore AZ</title>
     <link rel="icon" type="image/x-icon" href="images/DEF-Logos/favicon.ico">
 
     <!-- jQuery -->
@@ -41,7 +41,7 @@
     <link rel="stylesheet"
         href="https://cdn.uadigital.arizona.edu/lib/ua-bootstrap/v1.0.0-beta.17/ua-bootstrap.min.css">
     <!-- EngrIT CSS for Admin Request app -->
-    <link href="css/engrStyle.css" rel="stylesheet">
+    <link href="css/azStyle.css" rel="stylesheet">
     <!-- pretty tables -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Google Icons -->
@@ -66,25 +66,24 @@
     <!--<div data-include="intro"></div> -->
     <!-- Tab links -->
     <div class="tabnames">
-        <!-- CHANGE ME only the text before the </button> tag -->
+        
         <button class="tablinks active" onclick="openTab(event, 'Welcome')">Home</button>
-        <button class="tablinks" onclick="openTab(event, 'Resources')">Resources</button>
-        <button class="tablinks" onclick="openTab(event, 'Tool List')">Tools</button>
-        <!-- <button class="tablinks" onclick="openTab(event, 'Setup')">Setup</button>
-         <button class="tablinks" onclick="openTab(event, 'Editing')">Editing</button> -->
+        <button class="tablinks" onclick="openTab(event, 'Trails')">Trails</button>
+        <button class="tablinks" onclick="openTab(event, 'About')">About Us</button>
+
     </div>
 
     <!-- Tab content -->
-    <div id="Resources" class="tabcontent">
-        <div data-include="tabs/resources"></div>
+    <div id="About" class="tabcontent">
+        <div data-include="pages/about"></div>
     </div> <!-- setup content -->
 
-    <div id="Tool List" class="tabcontent">
-        <div data-include="tabs/toolList"></div>
+    <div id="Trails" class="tabcontent">
+        <div data-include="pages/trails"></div>
     </div> <!-- setup content -->
 
     <div id="Welcome" class="tabcontent" style="display: block;">
-        <div data-include="tabs/welcome"></div>
+        <div data-include="pages/welcome"></div>
     </div>
 
 </div> <!-- maincontent -->

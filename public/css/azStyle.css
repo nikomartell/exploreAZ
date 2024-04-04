@@ -8,12 +8,11 @@
 
 
 :root{
-  --UAblue: #001c48;
-  --UAlightBlue: #2435cc;
-  --UAred: #ab0520;
+  --AZBlue: #001c48;
+  --AZYellow: #f4ce10;
+  --AZRed: #ab0520;
   --OffWhite: #f1f1f1;
   --DarkGrey: #c1c1c1;
-  --SupportMenuWidth: 150px;
 }
 
 h1{
@@ -36,49 +35,9 @@ body {
   flex-direction: row;
 /*  min-width: 100vw; */
 }
-.engrIT-header-support {
-  background: var(--UAblue);
-  height: 60px;
-}
-#region-header-engr {
-  height: 60px;
-  display: flex;
-  color: var(--UAblue);
-}
-#region-header-engr img{
-  width: auto;
-  height: 60px;
-  display: block;
-  margin-left: 8%;
-  margin-right: auto;
-  display: flex;
-}
-#support-menu-button {
-  background-color: var( --UAblue );
-  border: none;
-  color: white;
-  padding: 1px 1px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-#support-menu {
-  display: block;
-  width: 100%;
-  background: var(--UAblue);
-}
-#support-menu ul {
-  list-style-type: none;
-  position: relative;
-}
 
-a.support-menu-a {
-  color: white;
-}
-#support-menu-button {
-  margin-right: 0;
-  right: 100%;
+.head{
+  background-color: var(--AZYellow);
 }
 
 .maincontent {
@@ -97,10 +56,6 @@ a.support-menu-a {
   bottom: 0;
 }
 
-.defhead{
-  display: block;
-}
-
 .footer-container{
   margin-bottom: 0px;
   margin-left: 5px;
@@ -113,24 +68,29 @@ a.support-menu-a {
   max-width:360px;
   width:80%;
 }
+
 #footer-site ul{
   display:inline-block;
   margin:0;
   padding:1rem 0 0;
 }
+
 #footer-site ul>li{
   border-right:1px solid #b6bec1;
   display:inline-block;
   list-style:none;
 /*  padding:0 .75rem; */
 }
+
 #footer-site ul>li.last{
   border-right:0;
 }
+
 #footer-site a{
   color:#333;
   text-decoration:underline;
 }
+
 #footer-site #footer-copyright{
   float:left;width:100%;
 }
@@ -153,19 +113,6 @@ a.support-menu-a {
 
 
 /* box outline for where icons are to be placed into*/
-.box_model {
-  max-width:100%;
-  height: auto;
-  border: 50px #c1c1c1;
-  padding: 50px;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-size: 18px;
-  text-align: center;
-} 
 
 .caption {
   max-width:100%;
@@ -190,7 +137,7 @@ a.support-menu-a {
 /* Style the buttons that are used to open the tab content */
 .tabnames button {
   background-color: inherit;
-  float: left;
+  float: center;
   border: none;
   outline: none;
   cursor: pointer;
@@ -228,7 +175,7 @@ a.support-menu-a {
   width: 25rem;
   height: 14rem;
   margin: 4rem;
-  border: 5px solid var(--UAblue);
+  border: 5px solid var(--AZBlue);
   border-radius: 20px;
   padding: 20px;
 }
@@ -248,7 +195,7 @@ a.support-menu-a {
   -webkit-transition: visibility 0, opacity 0.5s linear;
   transition: visibility 0s, opacity 0.5s linear;
   border-radius: 20px;
-  border: 5px solid var(--UAblue);
+  border: 5px solid var(--AZBlue);
   font-size: 12px;
   padding: 8px 15px;
   width: 25rem;
@@ -302,10 +249,6 @@ a.support-menu-a {
   background-position: center center;
   width: 270px;
   height: 20px;
-}
-
-.def-header{
-  background-color: #ab0520;
 }
 
 .caption{
@@ -368,43 +311,6 @@ a.support-menu-a {
   padding: 4px;
 }
 
-/* The actual popup (appears on top) */
-.popup .popuptext {
-  visibility: hidden;
-  width: 40rem;
-  background-color: var(--OffWhite);
-  opacity: 90%;
-  color: black;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px;
-  position: absolute;
-  z-index: 1;
-  bottom: -125%;
-  left: 50%;
-  margin-left: -100px;
-  max-width: 200%;
-  border: 5px solid var(--DarkGrey);
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: var(--OffWhite) transparent transparent transparent;
-}
-
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 0.7s;
-  animation: fadeIn 0.7s
-}
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
