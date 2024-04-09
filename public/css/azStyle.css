@@ -39,6 +39,8 @@ body {
 .headerman{
   background-image: linear-gradient(to bottom, var(--AZYellow), var(--AZRed));
   justify-content: inline-block;
+  margin: auto;
+  display: flex;
 }
 
 .support{
@@ -57,11 +59,15 @@ body {
 */
 
 #footer-site{
-  background:#e6e3d9;
+  background: var(--AZBlue);
   margin-top:2.5rem;
   width: 100%;
   position: relative;
   bottom: 0;
+  color: white;
+  :link{
+    color: white;
+  }
 }
 
 .footer-container{
