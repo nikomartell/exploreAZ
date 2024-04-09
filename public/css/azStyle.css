@@ -36,8 +36,16 @@ body {
 /*  min-width: 100vw; */
 }
 
-.head{
-  background-color: var(--AZYellow);
+.headerman{
+  background-image: linear-gradient(to bottom, var(--AZYellow), var(--AZRed));
+  justify-content: inline-block;
+}
+
+.support{
+  background-color: var(--AZRed);
+  button{
+    background-color: var(--AZYellow);
+  }
 }
 
 .maincontent {
