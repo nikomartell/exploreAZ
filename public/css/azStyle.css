@@ -36,11 +36,30 @@ body {
 /*  min-width: 100vw; */
 }
 
+video {
+  width: 100%;
+  height: 50rem;
+  position: relative;
+  z-index: -1;
+  object-position: center;
+  object-fit: cover;
+}
+
 .headerman{
-  background-image: linear-gradient(to bottom, var(--AZYellow), var(--AZRed));
+  position: relative;
   justify-content: inline-block;
   margin: auto;
   display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin: auto;
+}
+
+.headerman img{
+  height: 500px;
+  margin: auto;
+  position: fixed;
+  display: block;
 }
 
 .support{
@@ -61,6 +80,8 @@ body {
 #footer-site{
   background: var(--AZBlue);
   margin-top:2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   width: 100%;
   position: relative;
   bottom: 0;
@@ -151,7 +172,6 @@ body {
 /* Style the buttons that are used to open the tab content */
 .tabnames button {
   background-color: inherit;
-  float: center;
   border: none;
   outline: none;
   cursor: pointer;
@@ -325,14 +345,3 @@ body {
   padding: 4px;
 }
 
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: .90;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:.90 ;}
-} 

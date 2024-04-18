@@ -1,44 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+<title>User Featured Story</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Story Submission Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/FeaturedStoryCSS.css">
 </head>
 <body>
 
-<h2>Get your story featured!</h2>
+<div class="container">
+  <header class="header">
+    <h1 class="header-title">FEATURED STORIES</h1>
+  </header>
 
-<form action="#" method="post" enctype="multipart/form-data">
-  <label for="name">Name/ Alias:</label><br>
-  <input type="text" id="name" name="name"><br><br>
-  
-  <label for="age">Age range:</label><br>
-  <select id="age" name="age">
-    <option value="under 18">Under 18</option>
-    <option value="18-25">18-25</option>
-    <option value="26-35">26-35</option>
-    <option value="36-45">36-45</option>
-    <option value="46-55">46-55</option>
-    <option value="56+">56+</option>
-  </select><br><br>
-  
-  <label for="travel-type">Travel type:</label><br>
-  <select id="travel-type" name="travel-type">
-    <option value="solo">Solo</option>
-    <option value="couple">Couple</option>
-    <option value="group">Group</option>
-    <option value="family">Family</option>
-  </select><br><br>
-  
-  <label for="itinerary">The Itinerary:</label><br>
-  <textarea id="itinerary" name="itinerary" rows="4" cols="50"></textarea><br><br>
-  
-  <label for="pictures">Pictures:</label><br>
-  <input type="file" id="pictures" name="pictures" accept="image/*"><br><br>
-  
-  <input type="submit" value="Submit">
-</form>
+  <div class="main-content">
+    <div class="story">
+    <p class="header-subtitle">If you need some inspiration for your future trip take a look at what some other travellers did in Arizona! </p>
+      <div class="story-details">
+        <h2 class="story-title"> Girls Weekend in Sedona! </h2>
+        <h4> Jessie Smith </h4>
+        <p class="story-info"> Age range: 18-25 , Trip type: Group </p>
+        <img src="images/JessieSmith.jpg" alt="Women in Sedona" class="story-image">
+        <div class="story-text">
+          <p>I spent this past weekend with my friends in Sedona and it was amazing! We kicked off our adventure with a sunrise hike at Fay Canyon – the perfect way to start the day with a dose of nature's beauty. And let me tell you, those views of Courthouse Butte and Bell Rock were absolutely breathtaking!</p>
+          <p>After working up an appetite, we headed to the Coffee Pot Restaurant for breakfast. But the fun didn't stop there! We tackled Sugarloaf Loop and even ventured into Keyhole Cave for a little extra excitement. And what better way to end the day than with a mouthwatering dinner at Pisa Lisa? That pizza was worth every bite, let me tell you!</p>
+          <p>We started bright and early on day 2 with a sunrise hike at Cathedral Rock. The trail was busy, but we woke up early and for those views? Absolutely worth it! After our hike, we headed to The Secret Garden Cafe at Tlaquepaque Arts & Shopping Village for some breakfast. Their outdoor seating area was the perfect spot to soak up the morning sun and fuel up for the day ahead. With our bellies full, we spent the afternoon exploring the charming streets of Tlaquepaque, indulging in a little retail therapy and soaking in the Spanish-inspired architecture. It was like stepping into another world!</p>
+          <p> We had so much fun and I can’t wait to visit Sedona again!</p>
+        </div>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <div class="submit-form">
+        <h2 class="form-title">Submit Your Story</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+          <label for="name">Name / Alias:</label><br>
+          <input type="text" id="name" name="name"><br><br>
+          
+          <label for="age">Age range:</label><br>
+          <select id="age" name="age">
+            <option value="under 18">Under 18</option>
+            <option value="18-25">18-25</option>
+            <option value="26-35">26-35</option>
+            <option value="36-45">36-45</option>
+            <option value="46-55">46-55</option>
+            <option value="56+">56+</option>
+          </select><br><br>
+          
+          <label for="travel-type">Travel type:</label><br>
+          <select id="travel-type" name="travel-type">
+            <option value="solo">Solo</option>
+            <option value="couple">Couple</option>
+            <option value="group">Group</option>
+            <option value="family">Family</option>
+          </select><br><br>
+          
+          <label for="itinerary">The Itinerary:</label><br>
+          <textarea id="itinerary" name="itinerary" rows="4" cols="50"></textarea><br><br>
+          
+          <label for="pictures">Pictures:</label><br>
+          <input type="file" id="pictures" name="pictures" accept="image/*"><br><br>
+          
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </aside>
+  </div>
+
+</div>
 
 </body>
 </html>

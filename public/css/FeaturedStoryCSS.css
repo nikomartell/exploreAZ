@@ -1,0 +1,65 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header-title {
+  margin-top: 0;
+}
+
+.header-subtitle {
+  margin-bottom: 20px;
+}
+
+
+.main-content {
+  display: flex;
+}
+
+.story {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.story-image {
+  width: 100%;
+}
+
+.story-title {
+  margin-top: 0;
+}
+
+.story-info {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.story-text {
+  margin-top: 0;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+.form-title {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .story,
+  .sidebar {
+    margin-right: 0;
+  }
+}
