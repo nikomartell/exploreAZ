@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Accommodations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10;
+        }
+        .h {
+            background-image: url('images/Accommodation image.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 130px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .accommodation-info {
+            display: none;
+        }
+		label {
+            display: block;
+            margin-top: 10px;
+        }
+        select {
+            margin-bottom: 10px; 
+        }
+		
+    </style>
+</head>
+<body>
+    <header class="h">
+        <h1>Arizona Accommodations</h1>
+    </header>
+	<label for="locationSelect">Choose location:</label>
+    <select id="locationSelect" onchange="showAccommodation()">
+		<option value="">Select Location</option>
+        <option value="sedona">Sedona</option>
+        <option value="grandCanyon">Grand Canyon</option>
+        <option value="phoenix">Phoenix</option>
+        <option value="tucson">Tucson</option>
+    </select>
+
+    <div id="sedona" class="accommodation-info">
+        <h2>Sedona</h2>
+        <ul>
+            <li>
+				<h2>Sedona Village Lodge</h2>
+				<p>Location: Sedona, Arizona</p>
+				<p>Description: Sedona Village Lodge offers cozy accommodations surrounded by the stunning landscapes of Sedona. Enjoy comfortable rooms and convenient amenities.</p>
+				<p><a href="https://www.sedonavillagelodge.com/">More Info</a></p>
+			</li>
+            <li>
+				<h2>Junipine Resort</h2>
+				<p>Location: Sedona, Arizona</p>
+				<p>Description: unipine Resort is nestled in the picturesque Oak Creek Canyon, offering spacious creek-side villas with full kitchens and fireplaces, perfect for a relaxing getaway.</p>
+				<p><a href="https://www.junipine.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing">More info</a>
+				</li>
+				
+            <li>
+				<h2>Sky Rock</h2>
+				<p>Location: Sedona, Arizona</p>
+				<p>Description: Sky Rock Sedona offers modern accommodations with breathtaking views of the red rocks. Enjoy upscale amenities and a convenient location near Sedona's attractions.</p>
+				<p><a href="https://www.marriott.com/en-us/hotels/flgsx-sky-rock-sedona-a-tribute-portfolio-hotel/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0">More info</a></p>
+			</li>
+        </ul>
+    </div>
+
+    <div id="grandCanyon" class="accommodation-info">
+        <h2>Grand Canyon</h2>
+        <ul>
+            <li>
+				<h2>High Country Motor Lodge</h2>
+				<p>Location: Grand Canyon, Arizona</p>
+				<p>Description: High Country Motor Lodge provides comfortable rooms in the heart of Grand Canyon Village. Conveniently located near the South Rim, it's a great base for exploring the Grand Canyon.</p>
+				<p><a href="https://highcountrymotorlodge.com/">More info</a>
+			</li>
+			
+            <li>
+				<h2>Sequire Resort</h2>
+				<p>Location: Grand Canyon, Arizona</p>
+				<p>Description: Sequire Resort offers budget-friendly accommodations near the Grand Canyon. Enjoy clean rooms and easy access to nearby attractions.
+Location: Grand Canyon, Arizona</p>
+				<p><a href="https://www.bestwestern.com/en_US/book/hotel-rooms.03049.html?iata=00171880&ssob=BLBWI0004G&cid=BLBWI0004G:google:gmb:03049">More info</a>
+			</li>
+            <li>
+				<h2>Red Feather Lodge</h2>
+				<p>Location: Grand Canyon, Arizona</p>
+				<p>Description: Red Feather Lodge provides affordable and comfortable lodging near the Grand Canyon. With its convenient location, it's a popular choice for visitors exploring the area.</p>
+				<p><a href="https://www.redfeatherlodge.com/">More info</a></p>
+			</li>
+        </ul>
+    </div>
+
+    <div id="phoenix" class="accommodation-info">
+        <h2>Phoenix</h2>
+        <ul>
+            <li>
+				<h2>Hyatt Regency</h2>
+				<p>Location: Phoenix, Arizona</p>
+				<p>Description: Hyatt Regency Phoenix offers upscale accommodations in downtown Phoenix. Enjoy luxurious rooms, excellent dining options, and easy access to the city's attractions.</p>
+				<p><a href="https://www.hyatt.com/hyatt-regency/en-US/phxrp-hyatt-regency-phoenix?src=corp_lclb_gmb_seo_phxrp">More info</a></p>
+			</li>
+			
+            <li>
+				<h2>Locale Midtown</h2>
+				<p>Location: Phoenix, Arizona</p>
+				<p>Description: Locale Midtown offers stylish apartment-style accommodations in the heart of Phoenix. Enjoy modern amenities and a convenient location close to downtown attractions.</p>
+				<p><a href="https://www.locale.com/properties/midtown">More info</a></p>
+			</li>
+            <li>
+				<h2>Crowne Plaza</h2>
+				<p>Location: Phoenix, Arizona</p>
+				<p>Description: Crowne Plaza Phoenix provides comfortable accommodations and excellent amenities for business and leisure travelers. Conveniently located near downtown Phoenix, it offers easy access to attractions.</p>
+				<p><a href="https://www.crowneplazaphx.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp_listing">More info</a></p>
+			</li>
+        </ul>
+    </div>
+
+    <div id="tucson" class="accommodation-info">
+        <h2>Tucson</h2>
+        <ul>
+            <li>
+				<h2>Graduate Tucson</h2>
+				<p>Location: Tucson, Arizona</p>
+				<p>Description: Graduate Tucson offers unique accommodations with a retro-inspired design near the University of Arizona. Enjoy comfortable rooms and convenient amenities.</p>
+				<p><a href="https://graduatehotels.com/tucson/">More info</a></p>
+			</li>
+			
+            <li>
+				<h2>DoubleTree Suites By Hilton Tucson</h2>
+				<p>Location: Tucson, Arizona</p>
+				<p>Description: DoubleTree Suites by Hilton Tucson offers spacious suites with modern amenities. Located near Tucson Airport, it's a great choice for both business and leisure travelers.</p>
+				<p><a href="https://www.hilton.com/en/hotels/tustadt-doubletree-suites-tucson-airport/?SEO_id=GMB-AMER-DT-TUSTADT&y_source=1_MTM3MjY1OS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D">More info</a></p>
+			</li>
+			
+            <li>
+				<h2>AC Hotel by Marriott</h2>
+				<p>Location: Tucson, Arizona</p>
+				<p>Description: AC Hotel by Marriott Tucson Downtown offers sleek and modern accommodations in the heart of downtown Tucson. Enjoy stylish rooms and convenient access to the city's attractions.</p>
+				<p><a href="https://www.marriott.com/en-us/hotels/tusad-ac-hotel-tucson-downtown/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0">AC Hotel by Marriott</a></p>
+			</li>
+        </ul>
+    </div>
+
+    <script>
+        function showAccommodation() {
+            var location = document.getElementById("locationSelect").value;
+            var accommodations = document.getElementsByClassName("accommodation-info");
+
+            for (var i = 0; i < accommodations.length; i++) {
+                accommodations[i].style.display = "none";
+            }
+
+            if (location) {
+                document.getElementById(location).style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

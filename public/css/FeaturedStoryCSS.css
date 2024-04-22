@@ -26,6 +26,12 @@ body {
 .story {
   flex: 2;
   margin-right: 20px;
+  
+}
+
+.story-details {
+  margin-bottom: 30px;
+  padding: 30px;
 }
 
 .story-image {
@@ -51,6 +57,9 @@ body {
 
 .form-title {
   margin-top: 0;
+}
+.submit-form {
+  padding: 20px; 
 }
 
 @media screen and (max-width: 768px) {

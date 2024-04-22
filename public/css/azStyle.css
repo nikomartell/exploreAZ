@@ -58,7 +58,7 @@ video {
 .headerman img{
   height: 500px;
   margin: auto;
-  position: fixed;
+  position: absolute;
   display: block;
 }
 
@@ -67,6 +67,19 @@ video {
   button{
     background-color: var(--AZYellow);
   }
+}
+
+.event {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.event h2 {
+  margin-top: 0;
+}
+.event p {
+  margin-bottom: 0;
 }
 
 .maincontent {
@@ -140,10 +153,6 @@ video {
   vertical-align: center;
   flex-direction: wrap;
   display: flex;
-}
-
-.long_tab {
-  margin-left: 60px;
 }
 
 
