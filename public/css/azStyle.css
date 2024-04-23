@@ -17,6 +17,7 @@
 
 h1{
   text-align: center;
+  margin-bottom: 20px;
 }
 
 
@@ -43,6 +44,24 @@ video {
   z-index: -1;
   object-position: center;
   object-fit: cover;
+}
+
+.b {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+}
+.event {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.event h2 {
+  margin-top: 0;
+}
+.event p {
+  margin-bottom: 0;
 }
 
 .headerman{
