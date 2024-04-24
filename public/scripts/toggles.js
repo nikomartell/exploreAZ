@@ -29,3 +29,16 @@ function openTab(evt, TabName) {
     document.getElementById(TabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+function showAccommodation() {
+    var location = document.getElementById("locationSelect").value;
+    var accommodations = document.getElementsByClassName("accommodation-info");
+
+    for (var i = 0; i < accommodations.length; i++) {
+        accommodations[i].style.display = "none";
+    }
+
+    if (location) {
+        document.getElementById(location).style.display = "block";
+    }
+}

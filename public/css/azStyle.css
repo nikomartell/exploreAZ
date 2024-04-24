@@ -8,16 +8,18 @@
 
 
 :root{
-  --AZBlue: #001c48;
-  --AZYellow: #f4ce10;
-  --AZRed: #ab0520;
-  --OffWhite: #f1f1f1;
+  --AZBlue: #002868;
+  --AZYellow: #FED700;
+  --AZRed: #BF0A30;
+  --AZCopper: #CE5C17;
   --DarkGrey: #c1c1c1;
 }
 
 h1{
   text-align: center;
   margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 
@@ -45,6 +47,60 @@ video {
   object-position: center;
   object-fit: cover;
 }
+
+.sh1{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: red;
+  padding: 15px;
+}
+
+.sh3{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 5px;
+}
+
+.listImages{
+   width: 600px;
+   height: 400px;
+}
+
+.listDiv{
+   text-align: center;
+}
+
+.listP{
+   font-family: Arial, Helvetica, sans-serif;
+   max-width: 600px;
+   margin: auto;
+   padding-top: 10px;
+   text-align: left;
+   line-height: 1.5;
+}
+
+.tableDiv{
+   padding: 10px;
+   
+}
+
+table {
+   border-collapse: collapse;
+   width: 50%;
+   max-width: 600px;
+   padding: 10px;
+   margin: 0 auto;
+   background-color: lightblue;
+}
+table, th, td {
+   border: 1px solid black;
+}
+th, td {
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 10px;
+   text-align: center;
+}
+
 
 .b {
   font-family: Arial, sans-serif;
@@ -103,6 +159,7 @@ video {
 
 .maincontent {
   margin-bottom: auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* 
@@ -172,6 +229,7 @@ video {
   vertical-align: center;
   flex-direction: wrap;
   display: flex;
+  margin-bottom: 16px;
 }
 
 
@@ -194,7 +252,7 @@ video {
 */
 .tabnames {
   overflow: hidden;
-  border: 1px solid #ccc;
+  border: 2px solid var(--AZBlue);
   background-color: #f1f1f1;
 }
 /* Style the buttons that are used to open the tab content */
@@ -229,94 +287,10 @@ video {
   list-style-type: none;
 }
 
-.item{
-  vertical-align: top;
-  display: inline-block;
-  text-align: center;
-  font-size: 16px;
-  width: 25rem;
-  height: 14rem;
-  margin: 4rem;
-  border: 5px solid var(--AZBlue);
-  border-radius: 20px;
-  padding: 20px;
-}
-
 .logo{
   justify-content: center;
   display: inline-block;
   position: relative;
-}
-
-.item p{
-  position: relative;
-  background-color: var(--DarkGrey);
-  color: black;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: visibility 0, opacity 0.5s linear;
-  transition: visibility 0s, opacity 0.5s linear;
-  border-radius: 20px;
-  border: 5px solid var(--AZBlue);
-  font-size: 12px;
-  padding: 8px 15px;
-  width: 25rem;
-  margin-top: 3rem;
-  z-index: 1;
-}
-
-.item:hover{
-  cursor: pointer;
-}
-
-.item:hover p{
-  visibility: visible;
-  opacity: 1;
-}
-
-.logo img{
-  height: 5rem;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.logo img:hover{
-  background: var(--DarkGrey);
-}
-
-.item:hover{
-  background: var(--DarkGrey);
-}
-
-/*Niko Notes: 
-  add logo hover effect for button indication. do the same for info button.
-  update links for tools installed on def
-  fix logo padding/border issue 
-  Standardize logo button sizes through image sizes or css */
-
-.deflogo{
-  max-height: 10rem;
-  max-width: 100%;
-}
-
-.arizona-logo{
-  float: left;
-  background-size: cover;
-  background-position: center center;
-}
-
-.it-logo{
-  float: right;
-  background-size: cover;
-  background-position: center center;
-  width: 270px;
-  height: 20px;
-}
-
-.caption{
-  display: block;
-  font-size: 20px;
-  margin-top: 20px;
 }
 
 .hide{
@@ -327,49 +301,3 @@ video {
   display: block;
   color: black
 }
-
-.leftTab{
-  float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width: 30%;
-  height: 300px;
-}
-
-.leftTab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.leftTab button:hover{
-  color: #b6bec1;
-}
-
-.leftTab button.active{
-  background-color: var(--DarkGrey);
-}
-
- /* Popup container */
- .popup {
-  position: relative;
-  display: flex;
-  cursor: pointer;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 80px;
-  font-size: 12px;
-  background: var(--DarkGrey);
-  border-radius: 20px;
-  margin: auto;
-  padding: 4px;
-}
-
